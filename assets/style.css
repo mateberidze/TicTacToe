@@ -194,7 +194,7 @@ button:hover {
     color: #333;
 }
 
-/* Responsive Design */
+/* Responsive */
 @media (max-width: 600px) {
     .cell {
         width: 80px;
