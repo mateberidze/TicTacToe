@@ -1,3 +1,5 @@
+const { ifStatement } = require("@babel/types");
+const { ifError } = require("assert");
 const { runInThisContext } = require("vm");
 
 const cells = document.querySelectorAll('.cell');
@@ -73,23 +75,6 @@ function checkWinner() {
     }
 }
 
-// function highlightWinningCells(a, b, c) {
-//     cells[a].classList.add('win');
-//     cells[b].classList.add('win');
-//     cells[c].classList.add('win');
-// }
-
-// function resetGame() {
-//     currentPlayer = "X";
-//     options = ["", "", "", "", "", "", "", "", ""];
-//     cells.forEach(cell => {
-//         cell.textContent = "";
-//         cell.classList.remove('win');
-//     });
-//     statusText.textContent = `${currentPlayer}'s turn`;
-//     running = true;
-// }
-
 
 
 function resetGame(){
@@ -108,6 +93,5 @@ function highlightWinningCells(a, b, c) {
         cells[a].classList.add('win');
         cells[b].classList.add('win');
         cells[c].classList.add('win');
-    }
-
+    };
 
